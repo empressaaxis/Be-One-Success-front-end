@@ -1,4 +1,5 @@
 import './App.css';
+import Footer from './components/Footer';
 import Navbar from './components/Navbar';
 import Landing from './pages/landing/Landing';
 import Login from './pages/Login.js/Login';
@@ -11,6 +12,7 @@ function App() {
       {/* <Landing /> */}
       {/* <Signup /> */}
       <Login />
+      <Footer />
     </div>
   );
 }
