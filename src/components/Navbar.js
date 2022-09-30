@@ -22,7 +22,7 @@ const Navbar = () => {
             <div className='w-[1300px] flex flex-row justify-between mx-auto'>
                 <div className='w-[800px] flex flex-row justify-around'>
                     <img src={Boy} className='w-[70px] h-[70px] rounded-full object-cover' alt='boy' />
-                    <h1 className='text-white font-light ml-10 mt-5'>An Active Scholarship at Massachussete University giving out 10 scholarships.</h1>
+                    <h1 className='text-white font-light ml-10 mt-5'>An Active Scholarship at Massachussete University giving out 10 scholarships. <a className='text-[#e7ab21] cursor-pointer'>Apply</a></h1>
                 </div>
                 <button onClick={() => setIsAdOn(false)} className='text-white hover:text-[#e7ab21]'>
                     X

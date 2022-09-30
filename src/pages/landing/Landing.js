@@ -19,8 +19,10 @@ const Landing = () => {
                         </button>
                     </Link>
                 </div>
-                <div className=''>
-                    <img src={ScholarshipImage} className='rounded-[20px] md:w-[700px] md:h-[500px]' alt='graduationImg' />
+                <div className='flex flex-row justify-around mt-[20px]'>
+                    <img src={ScholarshipImage} className='rounded-[20px] md:w-[220px] object-cover md:h-[500px] mr-2' alt='graduationImg' />
+                    <img src='https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80' className='rounded-[20px] md:w-[220px] object-cover md:h-[500px] mr-2 mt-[-100px]' alt='graduationImg' />
+                    <img src='https://images.unsplash.com/photo-1523240795612-9a054b0db644?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80' className='rounded-[20px] md:w-[220px] object-cover md:h-[500px]' alt='graduationImg' />
                 </div>
             </div>
             
@@ -89,37 +91,6 @@ const Landing = () => {
                         </div>
                         <p>Hello,  If you can suppress the urge to retch long enough to give it a chance, I really think you’ll wonder how you ever worked with CSS any other way.</p>
                     </div>
-                    <div className='md:w-[32%] min-h-[200px] rounded-[10px] shadow bg-[#006494] text-white mt-[15px] p-[20px]'>
-                        <div className='flex flex-row m-[10px]'>
-                            <img src={Boy} className='w-[80px] h-[80px] object-cover rounded-full' alt='boy' />
-                            <div className='mx-[10px] mt-[8px]'>
-                                <h1 className='font-bold text-[20px]'>John Doe</h1>
-                                <p>Student ad CMU Netherlands</p>
-                            </div>
-                        </div>
-                        <p>Hello,  If you can suppress the urge to retch long enough to give it a chance, I really think you’ll wonder how you ever worked with CSS any other way.</p>
-                    </div>
-                    <div className='md:w-[32%] min-h-[200px] rounded-[10px] shadow bg-[#006494] text-white p-[20px] mt-[15px]'>
-                        <div className='flex flex-row m-[10px]'>
-                            <img src={Boy} className='w-[80px] h-[80px] object-cover rounded-full' alt='boy' />
-                            <div className='mx-[10px] mt-[8px]'>
-                                <h1 className='font-bold text-[20px]'>John Doe</h1>
-                                <p>Student ad CMU Netherlands</p>
-                            </div>
-                        </div>
-                        <p>Hello,  If you can suppress the urge to retch long enough to give it a chance, I really think you’ll wonder how you ever worked with CSS any other way.</p>
-                    </div>
-                    <div className='md:w-[32%] min-h-[200px] rounded-[10px] shadow bg-[#006494] text-white p-[20px] mt-[15px]'>
-                        <div className='flex flex-row m-[10px]'>
-                            <img src={Boy} className='w-[80px] h-[80px] object-cover rounded-full' alt='boy' />
-                            <div className='mx-[10px] mt-[8px]'>
-                                <h1 className='font-bold text-[20px]'>John Doe</h1>
-                                <p>Student ad CMU Netherlands</p>
-                            </div>
-                        </div>
-                        <p>Hello,  If you can suppress the urge to retch long enough to give it a chance, I really think you’ll wonder how you ever worked with CSS any other way.</p>
-                    </div>
-                    
                 </div>
             </div>
             <div>
@@ -137,7 +108,7 @@ const Landing = () => {
                     </Link>
                 </div>
                 <div className=''>
-                    <img src={BusinessImage} className='rounded-[20px] md:w-[700px] md:h-[700px] rounded-[100%] object-cover' alt='graduationImg' />
+                    <img src={BusinessImage} className='rounded-[20px] md:w-[600px] md:h-[600px] rounded-[100%] object-cover' alt='graduationImg' />
                 </div>
             </div>
         </div>
