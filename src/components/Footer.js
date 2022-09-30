@@ -26,10 +26,10 @@ const Footer = () => {
                 <h2 className="mb-6 text-sm font-semibold text-white uppercase">Services</h2>
                 <ul className="">
                     <li className="mb-4">
-                        <a href="https://flowbite.com/" classNameName="hover:underline text-white font-normal">Student</a>
+                        <a href="https://flowbite.com/" className="hover:underline text-white font-normal">Student</a>
                     </li>
                     <li>
-                        <a href="https://tailwindcss.com/" classNameName="hover:underline text-white">Business</a>
+                        <a href="https://tailwindcss.com/" className="hover:underline text-white">Business</a>
                     </li>
                 </ul>
             </div>
