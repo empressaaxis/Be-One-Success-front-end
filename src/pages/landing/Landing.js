@@ -1,8 +1,9 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import ScholarshipImage from '../../assets/landing/scholar.jpg'
 import Amazon from '../../assets/landing/amazon.png'
 import Boy from '../../assets/landing/boy.webp';
 import BusinessImage from '../../assets/landing/business.jpg';
+import { Link } from 'react-router-dom';
 
 const Landing = () => {
   return (
@@ -12,9 +13,11 @@ const Landing = () => {
                 <div className=' md:flex md:flex-col md:align-middle mt-[5px] md:mt-[20px]'>
                     <h1 className='font-bold text-[43px] text-center font-[roboto] md:text-left md:w-[400px] md:text-[50px] text-white'>We bring success on your door steps</h1>
                     <p className='md:w-[400px] mt-[30px] text-center md:text-left text-white'>Many students find reliable and safe for their career pursuation and use our services, we are game changers.</p>
-                    <button className='w-full mb-[20px] md:w-[150px] h-[40px] bg-[#e7ab21] rounded-[10px] text-white mt-[30px]'>
-                        Sign Up Free
-                    </button>
+                    <Link to='/signup'>
+                        <button className='w-full mb-[20px] md:w-[150px] h-[40px] bg-[#e7ab21] rounded-[10px] text-black mt-[30px]'>
+                            Sign Up Free
+                        </button>
+                    </Link>
                 </div>
                 <div className=''>
                     <img src={ScholarshipImage} className='rounded-[20px] md:w-[700px] md:h-[500px]' alt='graduationImg' />
@@ -127,9 +130,11 @@ const Landing = () => {
             <div className=' md:flex md:flex-col md:align-middle mt-[5px] md:mt-[100px]'>
                     <h1 className='font-bold text-[43px] text-center font-[roboto] md:text-left md:w-[400px] md:text-[50px] text-white'>We help you build your business successfully</h1>
                     <p className='md:w-[400px] mt-[30px] text-center md:text-left text-white'>Many students find reliable and safe for their career pursuation and use our services, we are game changers.</p>
+                    <Link to='/signup'>
                     <button className='w-full mb-[20px] md:w-[150px] h-[40px] bg-[#e7ab21] rounded-[10px] text-white mt-[30px]'>
                         Sign Up Free
                     </button>
+                    </Link>
                 </div>
                 <div className=''>
                     <img src={BusinessImage} className='rounded-[20px] md:w-[700px] md:h-[700px] rounded-[100%] object-cover' alt='graduationImg' />
@@ -138,7 +143,7 @@ const Landing = () => {
         </div>
 
         <div className='w-full flex justify-center items-center bg-[#182747]'>
-            <div className='w-[1300px] px-[20px] mt-[20px] pt-[20px] items-center justify-center'>
+            <div className='w-[1300px] px-[20px] mt-[20px] h-[300px] pt-[20px] items-center justify-center pb-5'>
                     <h1 className='text-[30px] text-center text-white font-thin'>Over 1000 business trust us.</h1>
                     <div className='md:flex w-full justify-between mt-[60px]'>
                         <img src={Amazon} className='w-[140px] h-[40px]' alt='Amazon' />
@@ -151,17 +156,48 @@ const Landing = () => {
         </div>
 
         <div className='w-full flex justify-center items-center bg-[#182747]'>
-            <div className='w-[1300px] px-[20px] mt-[20px] pt-[20px] items-center justify-center'>
-                    <h1 className='text-[30px] text-center text-white font-thin'>Over 1000 business trust us.</h1>
-                    <div className='md:flex w-full justify-between mt-[60px]'>
-                        <img src={Amazon} className='w-[140px] h-[40px]' alt='Amazon' />
-                        <img src={Amazon} className='w-[140px] h-[40px]' alt='Amazon' />
-                        <img src={Amazon} className='w-[140px] h-[40px]' alt='Amazon' />
-                        <img src={Amazon} className='w-[140px] h-[40px]' alt='Amazon' />
-                        <img src={Amazon} className='w-[140px] h-[40px]' alt='Amazon' />
+            <div className='w-[1300px] h-[700px] items-center justify-center pb-5'>
+                <h1 className='text-[30px] text-center text-white font-thin'>Current Scholarships.</h1>
+                <div className='bg-[#006494] flex justify-center items-center rounded-[10px] w-[700px] h-[350px] mx-auto mt-20'>
+                    <div className='flex flex-row w-[90%]'>
+                        <img src={Boy} className='w-[260px] h-[300px] object-cover rounded-[10px]' />
+                        <div className='ml-5 mt-5'>
+                            <h1 className='text-white font-bold text-[30px]'>University of Rwanda</h1>
+                            <p className='text-white mt-[20px]'>Lorem ipsum hsdf ksjdhf skjdfh sjfhskdjhf sdhsjkg sdgsjkdhjs sjdfhsdkjfhds jfhkjsdhf sdjkhf sdkjhfk jsdhfs djkfkjsdhf kjsdhf kjsdhf jkshdf kjsdhfskjdhf jsdhfs djkfkjsdhf kjsdhf kjsdhf jkshdf kjsdhfskjdhf </p>
+                            <button className='bg-[#e7ab21] w-full md:w-[150px] text-white font-medium h-[60px] rounded-[10px] mt-[30px]'>
+                                View
+                            </button>
+                        </div>
                     </div>
+                </div>
             </div>
         </div>
+
+        <div className='w-full flex justify-center items-center bg-[#182747]'>
+        <div className='w-[1300px] h-[700px] px-[20px] mt-[50px] items-center justify-between'>
+            <h1 className='text-white text-[25px] text-center mb-[30px] font-light'>Contact Us</h1>
+            <div className='w-[500px] min-h-[400px] mx-auto rounded-[20px] bg-[#006494] '>
+                <div className='flex flex-col w-[80%] mx-auto '>
+                    <label className='text-white text-[18px] mb-[10px] mt-[30px]'>Names</label>
+                    <input type='names' className='h-[50px] rounded-[5px] p-[10px]' placeholder='Eg: John Doe' />
+                </div>
+                <div className='flex flex-col w-[80%] mx-auto '>
+                    <label className='text-white text-[18px] mb-[10px] mt-[30px]'>Email</label>
+                    <input type='email' className='h-[50px] rounded-[5px] p-[10px]' placeholder='Eg: example@example.com' />
+                </div>
+                <div className='flex flex-col w-[80%] mx-auto '>
+                    <label className='text-white text-[18px] mb-[10px] mt-[30px]'>Message</label>
+                    <textarea type='text' className='h-[100px] rounded-[5px] p-[10px]' placeholder='Eg: Your message ...' />
+                </div>
+                <div className='flex flex-col w-[80%] mx-auto'>
+                    <button className='w-full mb-[20px] h-[40px] bg-[#e7ab21] rounded-[10px] text-white mt-[30px]'>
+                        Send Message
+                    </button>
+                </div>
+            </div>
+        </div>
+        </div>
+
     </>
   )
 }
