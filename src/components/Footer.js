@@ -11,11 +11,11 @@ const Footer = () => {
                 Be One Success Organization
             </p>
 
-            <div classNameName='mt-[20px]'>
-                <label classNameName='text-white font-semibold'>Subscribe to our email subscription.</label>
+            <div className='mt-[20px]'>
+                <label className='text-white font-semibold'>Subscribe to our email subscription.</label>
                 <div>
-                    <input classNameName='text-white w-[400px] h-[40px] p-[10px] rounded-[5px] mt-2' placeholder='Eg: Email' />
-                    <button classNameName='bg-[#e7ab21] w-[150px] h-[40px] rounded-[10px] ml-[20px]'>
+                    <input className='text-white w-[400px] h-[40px] p-[10px] rounded-[5px] mt-2' placeholder='Eg: Email' />
+                    <button className='bg-[#e7ab21] w-[150px] h-[40px] rounded-[10px] ml-[20px]'>
                         Subscribe
                     </button>
                 </div>
