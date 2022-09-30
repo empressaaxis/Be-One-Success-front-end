@@ -27,7 +27,7 @@ const Signup = () => {
                     <button className='w-full mb-[20px] h-[40px] bg-[#e7ab21] rounded-[10px] text-white mt-[30px]'>
                         Sign Up
                     </button>
-                    <a className='text-white'>You have an account? <Link to='/login' className='text-[#e7ab21]'> Login</Link></a>
+                    <p className='text-white'>You have an account? <Link to='/login' className='text-[#e7ab21]'> Login</Link></p>
                 </div>
             </div>
         </div>
