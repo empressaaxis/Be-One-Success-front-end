@@ -4,6 +4,8 @@ import Footer from './components/Footer';
 import Navbar from './components/Navbar';
 import About from './pages/about/About';
 import News from './pages/about/News';
+import NewsDetails from './pages/about/NewsDetails';
+import ScholashipDetails from './pages/about/ScholashipDetails';
 import Services from './pages/about/Services';
 import Landing from './pages/landing/Landing';
 import ForgotPassword from './pages/Login/ForgotPassword';
@@ -22,6 +24,8 @@ function App() {
             <Route path='about' element={<About />} />
             <Route path='services' element={<Services />} />
             <Route path='news' element={<News />} />
+            <Route path='news-details' element={<NewsDetails />} />
+            <Route path='scholar-details' element={<ScholashipDetails />} />
         </Routes>
         <Footer />
     </Router>

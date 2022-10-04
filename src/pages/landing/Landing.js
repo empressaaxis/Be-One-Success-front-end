@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import ScholarshipImage from '../../assets/landing/scholar.jpg'
 import Amazon from '../../assets/landing/amazon.png'
 import Boy from '../../assets/landing/boy.webp';
@@ -131,13 +131,15 @@ const Landing = () => {
                 <h1 className='text-[30px] text-center text-white font-thin'>Current Scholarships.</h1>
                 <div className='bg-[#006494] flex justify-center items-center rounded-[10px] w-[700px] h-[350px] mx-auto mt-20'>
                     <div className='flex flex-row w-[90%]'>
-                        <img src={Boy} className='w-[260px] h-[300px] object-cover rounded-[10px]' />
+                        <img src={Boy} className='w-[260px] h-[300px] object-cover rounded-[10px]' alt='ing' />
                         <div className='ml-5 mt-5'>
                             <h1 className='text-white font-bold text-[30px]'>University of Rwanda</h1>
                             <p className='text-white mt-[20px]'>Lorem ipsum hsdf ksjdhf skjdfh sjfhskdjhf sdhsjkg sdgsjkdhjs sjdfhsdkjfhds jfhkjsdhf sdjkhf sdkjhfk jsdhfs djkfkjsdhf kjsdhf kjsdhf jkshdf kjsdhfskjdhf jsdhfs djkfkjsdhf kjsdhf kjsdhf jkshdf kjsdhfskjdhf </p>
+                        <Link to='/scholar-details'>
                             <button className='bg-[#e7ab21] w-full md:w-[150px] text-white font-medium h-[60px] rounded-[10px] mt-[30px]'>
                                 View
                             </button>
+                        </Link> 
                         </div>
                     </div>
                 </div>
