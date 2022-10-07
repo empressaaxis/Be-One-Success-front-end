@@ -2,11 +2,18 @@ import { BrowserRouter as Router , Route, Routes } from 'react-router-dom';
 import './App.css';
 import Footer from './components/Footer';
 import Navbar from './components/Navbar';
+import SideBar from './components/SideBar';
 import About from './pages/about/About';
 import News from './pages/about/News';
 import NewsDetails from './pages/about/NewsDetails';
 import ScholashipDetails from './pages/about/ScholashipDetails';
 import Services from './pages/about/Services';
+import Applications from './pages/dashboard/Applications';
+import ChangePassword from './pages/dashboard/ChangePassword';
+import Channels from './pages/dashboard/Channels';
+import CreateProfile from './pages/dashboard/CreateProfile';
+import Dashboard from './pages/dashboard/Dashboard';
+import Documents from './pages/dashboard/Documents';
 import Landing from './pages/landing/Landing';
 import ForgotPassword from './pages/Login/ForgotPassword';
 import Login from './pages/Login/Login';
@@ -15,7 +22,7 @@ import Signup from './pages/signup/Signup';
 function App() {
   return (
     <Router>
-        <Navbar />
+        {/* <Navbar />
         <Routes>
             <Route path='/' element={<Landing />} />
             <Route path='signup' element={<Signup />} />
@@ -26,8 +33,18 @@ function App() {
             <Route path='news' element={<News />} />
             <Route path='news-details' element={<NewsDetails />} />
             <Route path='scholar-details' element={<ScholashipDetails />} />
+            <Route path='dashboard' element={<Dashboard />} />
         </Routes>
-        <Footer />
+        <Footer /> */}
+        <SideBar />
+        <Routes>
+          <Route path='dashboard' element={<Dashboard />} />
+          <Route path='create-profile' element={<CreateProfile />} />
+          <Route path='documents' element={<Documents />} />
+          <Route path='applications' element={<Applications />} />
+          <Route path='channels' element={<Channels />} />
+          <Route path='change-password' element={<ChangePassword />} />
+        </Routes>
     </Router>
   );
 }
