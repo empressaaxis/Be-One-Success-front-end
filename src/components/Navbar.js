@@ -39,7 +39,6 @@ const Navbar = () => {
                     <NavLink to='news'><span className='text-white hover:text-[#e7ab21] cursor-pointer'>News</span></NavLink>
                 </div>
                 <div className='flex flex-row'>
-                    
                     <Link to='/signup'>
                     <button className='w-[150px] h-[40px] bg-[#e7ab21] rounded-[10px] hidden md:block text-white transition duration-0 ease-in-out md:hover:duration-200'>
                         Sign Up
