@@ -3,6 +3,7 @@ import './App.css';
 import Footer from './components/Footer';
 import Navbar from './components/Navbar';
 import SideBar from './components/SideBar';
+import SideBarMentor from './components/SideBarMentor';
 import About from './pages/about/About';
 import News from './pages/about/News';
 import NewsDetails from './pages/about/NewsDetails';
@@ -14,6 +15,10 @@ import Channels from './pages/dashboard/Channels';
 import CreateProfile from './pages/dashboard/CreateProfile';
 import Dashboard from './pages/dashboard/Dashboard';
 import Documents from './pages/dashboard/Documents';
+import Apply from './pages/dashboard/mentor/Applications';
+import MentorHome from './pages/dashboard/mentor/MentorHome';
+import SendMessage from './pages/dashboard/mentor/Message';
+import Students from './pages/dashboard/mentor/Students';
 import Landing from './pages/landing/Landing';
 import ForgotPassword from './pages/Login/ForgotPassword';
 import Login from './pages/Login/Login';
@@ -22,7 +27,7 @@ import Signup from './pages/signup/Signup';
 function App() {
   return (
     <Router>
-        {/* <Navbar />
+        <Navbar />
         <Routes>
             <Route path='/' element={<Landing />} />
             <Route path='signup' element={<Signup />} />
@@ -35,16 +40,23 @@ function App() {
             <Route path='scholar-details' element={<ScholashipDetails />} />
             <Route path='dashboard' element={<Dashboard />} />
         </Routes>
-        <Footer /> */}
-        <SideBar />
+        <Footer />
+        {/* <SideBar />
         <Routes>
-          <Route path='dashboard' element={<Dashboard />} />
+          <Route path='/' element={<Dashboard />} />
           <Route path='create-profile' element={<CreateProfile />} />
           <Route path='documents' element={<Documents />} />
           <Route path='applications' element={<Applications />} />
           <Route path='channels' element={<Channels />} />
           <Route path='change-password' element={<ChangePassword />} />
-        </Routes>
+        </Routes> */}
+        {/* <SideBarMentor />
+        <Routes>
+          <Route path='/' element={<MentorHome />} />
+          <Route path='/message' element={<SendMessage />} />
+          <Route path='/student' element={<Students />} />
+          <Route path='/apply' element={<Apply />} />
+        </Routes> */}
     </Router>
   );
 }
